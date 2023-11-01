@@ -1,0 +1,48 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #d3bbbb;
+  text-align: center;
+}
+
+.container {
+  background-color: #fff;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+  font-size: 40px;
+  color: #FF5733;
+}
+
+.player-info {
+  margin: 20px 0;
+}
+
+.players {
+  font-size: 24px;
+  color: #efe161;
+}
+
+#chess1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #7bd4d5;
+  border-radius: 10px;
+}
+
+.result-box {
+  background-color: #7bd4d5;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.gameresult {
+  font-size: 20px;
+}
