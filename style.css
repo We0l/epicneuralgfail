@@ -1,3 +1,9 @@
+* {
+  padding: 0;
+  margin: 0; 
+  overflow-x: hidden;
+}
+ 
 body {
   font-family: 'Arial', sans-serif;
   background-color: #d3bbbb;
@@ -8,6 +14,16 @@ body {
   background-color: #fff;
   max-width: 700px;
   margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.container2 {
+  background-color: #fff;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 30px;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -52,4 +68,24 @@ h1 {
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.alev {  
+  margin-top: 50px;
+  width: 100vw;
+  height: 56.25vw;
+  background-image: url("alev.gif");
+
+}
+
+.alev:hover {
+  margin-top: 50px;
+  width: 100vw;
+  height: 56.25vw;
+  background-image: url("nigger.png");
+
+}
+
+.bosluk {
+  height: 50px;
 }
