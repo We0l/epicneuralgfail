@@ -143,6 +143,8 @@ form {
     height: 50px;
     width: 300px;
     background-color: #FEFFD0;
+    font-size: 30px;
+    text-align: center;
  }
  
  h3 { 
@@ -155,4 +157,13 @@ form {
     background-color: black;
     height: 70px;
     width: 400px;
+ }
+
+ #kredicaldim:hover{
+  cursor: pointer;
+  background-color: rgb(49, 48, 48);
+ }
+
+ #atbomb:hover{
+  cursor: pointer;
  }
