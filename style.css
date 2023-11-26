@@ -125,3 +125,34 @@ h1 {
 audio{
   margin-top: 10px;
 }
+
+form { 
+    margin: auto;
+    color: #FF8662;
+    font-size: 230%;
+    text-shadow: black 3px 3px 3px, black 1px 1px 1px;
+    border: 6px solid black;
+    font-weight: 600;
+    width: 56.25vw;
+    height: 100vh; 
+    background-image: url("para.jpg");
+    background-size: cover;
+ }
+ 
+ form input { 
+    height: 50px;
+    width: 300px;
+    background-color: #FEFFD0;
+ }
+ 
+ h3 { 
+    margin-top: 7vw;
+ }
+ 
+ #kredicaldim  {
+    margin-top: 5vw;
+    color: white;
+    background-color: black;
+    height: 70px;
+    width: 400px;
+ }
