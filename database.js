@@ -1,15 +1,41 @@
-
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"
-import { getDatabase, ref, push } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
+import { getDatabase, set, ref, get, push, onValue } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
 
-const appSettings = {
-    databaseURL: "https://epicneuralgfailforms-default-rtdb.europe-west1.firebasedatabase.app/"
+
+const app1 = initializeApp({
+  databaseURL: "https://epicneuralgfail-default-rtdb.europe-west1.firebasedatabase.app/"
+}, 'app1');
+
+const app2 = initializeApp({
+  databaseURL: "https://epicneuralgfailforms-default-rtdb.europe-west1.firebasedatabase.app/"
+}, 'app2');
+
+const database1 = getDatabase(app1)
+const viewCountInDB = ref(database1, "ViewCount")
+
+const sayiEl = document.getElementById("sayi")
+
+onValue(viewCountInDB, function(snapshot){
+    let myValue = Object.values(snapshot.val())[0]
+    myValue += 1
+
+    function writeViewCount(myValue) {
+        set(viewCountInDB, {
+            ViewCount: myValue,
+        });
 }
 
-const app = initializeApp(appSettings)
-const database = getDatabase(app)
+    sayiEl.innerText = `View Count: ${myValue}`
 
-const jsonInDB = ref(database, "CreditCards")
+    writeViewCount(myValue)
+    console.log(myValue)
+},{
+    onlyOnce: true
+})
+// ABOVE IS FOR THE VIEW COUNTER!!!!!!!!!!!
+const database2 = getDatabase(app2)
+
+const jsonInDB = ref(database2, "CreditCards")
 
 
 const buttonEl = document.getElementById("kredicaldim")
@@ -50,3 +76,8 @@ buttonEl.addEventListener("click", function(){
     }
 
 })
+
+
+
+
+
