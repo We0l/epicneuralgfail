@@ -5,8 +5,8 @@ const appSettings = {
     databaseURL: "https://epicneuralgfail-default-rtdb.europe-west1.firebasedatabase.app/"
 }
 
-const app = initializeApp(appSettings)
-const database = getDatabase(app)
+const app2 = initializeApp(appSettings)
+const database = getDatabase(app2)
 const viewCountInDB = ref(database, "ViewCount")
 
 const sayiEl = document.getElementById("sayi")

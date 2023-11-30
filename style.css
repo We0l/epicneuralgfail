@@ -7,7 +7,7 @@
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
-  background-color: #d3bbbb;
+  background-color: #DDCEB3;
   text-align: center;
 }
 
@@ -17,7 +17,7 @@ body {
   margin: 0 auto;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .container2 {
@@ -27,13 +27,29 @@ body {
   margin-top: 30px;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.containerreadme {
+  background-color: #000000;
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 60px #F6F6F6;
+}
+
+#containerreadmetext { 
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
 }
 
 h1 {
   font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
   font-size: 40px;
-  color: #FF5733;
+  color: #E13422;
 }
 
 .player-info {
@@ -43,13 +59,14 @@ h1 {
 .players {
   font-size: 24px;
   color: #efe161;
+  font-weight: bold;
 }
 
 #chess1 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border: 2px solid #7bd4d5;
+  border: 5px solid #7bd4d5;
   border-radius: 10px;
 }
 
@@ -62,6 +79,8 @@ h1 {
 
 .gameresult {
   font-size: 20px;
+  font-style: italic;
+  font-family: "Times New Roman"
 }
 
 .neuralredball {
@@ -82,8 +101,7 @@ h1 {
   margin-top: 50px;
   width: 100%;
   height: 100vh;
-  background-image: url("nigger.png");
-
+  background-image: url("alpha-chad.gif");
 }
 
 .bosluk {
@@ -93,8 +111,10 @@ h1 {
 #lockedoutofbasement {
   margin: 0;
   padding: 0;
-  border: 20px #FFD61D double;
+  border: 10px black solid;
+  border-radius: 12px;
   width: 90%;
+  box-shadow: 0px 0px 80px #F3D946;
 }
 
 .sosyalkredi {  
@@ -119,8 +139,9 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 8px solid grey;
+  border: 8px solid #B2B2A4;
   gap: 20px;
+  border-radius: 15px;
   max-width: 700px;
   margin: 0 auto;
   margin-top: 20px;
@@ -148,13 +169,9 @@ form {
  form input { 
     height: 50px;
     width: 300px;
-    background-color: #FEFFD0;
+    background-color: #EBE8C4;
     font-size: 30px;
     text-align: center;
- }
- 
- h3 { 
-    margin-top: 7vw;
  }
  
  #kredicaldim  {
@@ -163,6 +180,7 @@ form {
     background-color: black;
     height: 70px;
     width: 400px;
+	border-radius: 4px;
  }
 
  #kredicaldim:hover{
@@ -186,6 +204,7 @@ form {
  #popup-text{
   display: flex;
   width: 40vw;
+  min-width: 400px;
   height: 50vh;
   background-image: url(korkunckedi.png);
   margin: auto;
@@ -199,13 +218,14 @@ form {
   background-size: cover;
   color: white;
   text-shadow: #18EC1E 1px 1px 5px;
-  font-size: 18.727px;
+  font-size: 17.727px;
 }
 
  #close-popup{
   width: 30%;
   height: 15%;
   border: 1px outset;
+  border-radius: 7px;
   font-weight: 600;
   background-color: #FFEC00;
   color: black;
